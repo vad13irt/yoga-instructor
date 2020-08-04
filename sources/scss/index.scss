@@ -1,0 +1,180 @@
+@import "nullstyles";
+@import "config";
+@import "header";
+@import "footer";
+
+.present {
+    @include  background-image("../images/index/present-background.jpg");
+    height: 70vh;
+}
+
+.present__row {
+    height: 70%;
+}
+
+.present__block {
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.present__title {
+    color: #fff;
+    font-size: 65px;
+    font-style: italic;
+}
+
+.present__work {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+
+@include empty-block(".empty_1", "../images/index/eacb2ff25c7a7f74b40d254393e93ca3.jpg");
+
+
+.occupations {
+    background-color: #E2F3F8;
+}
+
+.occupations__occupation {
+    width: 350px;
+    height: 300px;
+    padding: 50px 75px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.occupations__title {
+    @extend .about__title;
+}
+
+.occupations__iinfo {
+    justify-content: space-between;
+}
+
+.occupations__otitle {    
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.occupations__description {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.occupations__link {
+    padding: 10px 75px;
+    background-color: $hover-color;
+    transition-duration: .5s;
+    transition-property: background-color;
+    color: #fff;
+    &:hover {
+        transition-duration: .5s;
+        transition-property: background-color;
+        background-color: #187D99;
+    }
+}
+
+@include empty-block(".empty_2", "../images/index/139142.jpg");
+
+.comments__title {
+    font-size: 100px;
+}
+
+.comments__text {
+    font-size: 22px;
+    max-width: 600px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+.comments__comment {
+    max-width: 250px;
+    margin: 20px;
+}
+
+.comments__image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.comments__name  {
+    color: $hover-color;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.contacts {
+    @include background-image("../images/index/197-1971424_beach-landscape-pebbles.jpg");
+}
+
+.contacts__container {
+    max-width: 35%;
+}
+
+
+.contacts__block {
+    padding: 75px;
+    height: 550px;
+    background-color: #fff;
+}
+
+
+.contacts__title {
+    margin-bottom: 40px;
+}
+
+.contacts__text {
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.contacts__form {
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+}
+
+.contacts__input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7.5px 5px;
+    color: #187D99;
+    letter-spacing: 1px;
+    border: 1px solid #187D99;
+}
+
+.contacts__message {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
+.contacts__button {
+    float: right;
+    padding: 7.5px 5px;
+    background-color: $hover-color;
+    color: #fff;
+    border: 0px;
+    transition-duration: .5s;
+    transition-property: background-color;
+    &:hover {
+        transition-duration: .5s;
+        transition-property: background-color;
+        background-color: #187D99;
+    }
+}

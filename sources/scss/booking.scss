@@ -1,0 +1,74 @@
+@import "nullstyles";
+@import "config";
+@import "header";
+@import "footer";
+
+.present {
+    @include background-image("../images/booking/mountains_clouds_dusk_154131_3840x2160.jpg");
+    background-position: bottom;
+}
+
+.present__title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.occupations {
+    padding: 25px 0;
+}
+
+.occupations__container {
+    max-width: 60%;
+}
+
+.occupations__item {
+    box-sizing: content-box;
+    border: 1px solid #000;
+    background-color: #E6F5F9;
+    width: 300px;
+    padding: 0 0 30px;
+    margin: 15px;
+}
+
+.occupations__image {
+    width: 100%;
+}
+
+.occupations__name {
+    text-align: center;
+    margin: 25px 5px 20px;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition-duration: .5s;
+    transition-property: color;
+    &:hover {
+        transition-duration: .5s;
+        transition-property: color;
+        color: #7F8A92;
+    }
+}
+
+.occupations__time {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.occupations__price {
+    @extend.occupations__time;
+    margin-bottom: 25px;
+}
+
+.occupations__link {
+    padding: 10px 20px;
+    background-color: $hover-color;
+    color: #fff;
+    transition-duration: .5s;
+    transition-property: background-color;
+    &:hover { 
+        transition-duration: .5s;
+        transition-property: background-color;
+        background-color: #187D99;
+    }
+}

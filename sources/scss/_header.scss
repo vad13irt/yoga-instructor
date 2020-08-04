@@ -1,0 +1,39 @@
+@import "config";
+
+header {
+    height: 75px;
+}
+
+.header__link {
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition-duration: .5s;
+    transition-property: color;
+    padding: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &_page {
+        color: $hover-color;
+    }
+    &:hover {
+        transition-duration: .5s;
+        transition-property: color;
+        color: $hover-color;
+    }
+}
+
+.header__social-network {
+    margin-left: 5px;
+    &:first-child {
+        margin-left: 0;
+    }
+    & img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
